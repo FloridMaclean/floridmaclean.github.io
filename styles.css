@@ -1497,4 +1497,49 @@ section {
     display: inline-block;
     vertical-align: middle;
     line-height: 1;
-} 
+}
+
+/* Hobbies Section */
+.hobbies {
+    background: #fff;
+    padding: 100px 0;
+}
+
+.hobbies-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hobbies-text h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.hobbies-text p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hobbies-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies-media iframe {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .hobbies-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
